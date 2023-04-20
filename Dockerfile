@@ -6,6 +6,6 @@ RUN apt-get -y install git
 RUN git clone https://github.com/Nikhil3389/devops-aws.git
 RUN cd devops-aws
 RUN ls
-ADD devops-aws /var/www/html
+ADD /devops-aws /var/www/html
 EXPOSE 80
 ENV name <Devops>
