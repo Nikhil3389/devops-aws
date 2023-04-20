@@ -7,8 +7,5 @@ RUN git clone https://github.com/Nikhil3389/devops-aws.git
 RUN cd devops-aws
 RUN ls
 ADD . /var/www/html
-COPY -r /devops-aws/assets/ /var/www/html
-COPY -r images/ /var/www/html
-COPY -r error/ /var/www/html
 EXPOSE 80
 ENV name <Devops>
