@@ -5,7 +5,8 @@ RUN service apache2 start
 RUN apt-get -y install git
 RUN git clone https://github.com/Nikhil3389/devops-aws.git app
 RUN cp -r /app/assets /var/www/html/
-
-ADD . /var/www/html
-EXPOSE 80
+RUN cp -r /app/images /var/www/html/
+RUN cp -r /app/error /var/www/html/
+RUN cp /app/index.html /var/www/html/
+EXPOSE 3000
 ENV name <Devops>
