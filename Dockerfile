@@ -8,5 +8,5 @@ RUN cp -r /app/assets /var/www/html/
 RUN cp -r /app/images /var/www/html/
 RUN cp -r /app/error /var/www/html/
 RUN cp /app/index.html /var/www/html/
-EXPOSE 3000
+EXPOSE 82
 ENV name <Devops>
